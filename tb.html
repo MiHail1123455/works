@@ -1,0 +1,641 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Total Battle </title>
+    <style type="text/css">
+        @media only screen and (max-device-width:740px),only screen and (max-width:740px) {
+            .table740{
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+            .mob_100 {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+            .mob_91 {
+                width: 91% !important;
+                max-width: 100% !important;
+            }
+            .h0{
+                height: 0 !important;
+                line-height: 0 !important;
+                font-size: 0 !important;
+            }
+            .h_auto{
+                height: auto !important;
+            }
+            .br_none{
+                display: none !important;
+            }
+            .mob_center{
+                margin: 0 auto !important;
+            }
+        }
+
+        @media only screen and (max-device-width: 480px),only screen and (max-width:480px){
+            .w15{
+                width: 15px !important;
+                min-width: 15px !important;
+            }
+            .w20{
+                width: 20px !important;
+            }
+            .w29{
+                width: 29px !important;
+            }
+            .w30{
+                width: 30px !important;
+            }
+            .w38{
+                width: 38px !important;
+                max-width: 38px !important;
+            }
+            .w220{
+                width: 220px !important;
+            }
+            .text-center{
+                text-align: center !important;
+            }
+            .h15{
+                height: 15px !important;
+                line-height: 15px !important;
+            }
+            .mob-hide {
+                display: none !important;
+                width: 0 !important;
+                height: 0 !important;
+                padding: 0 !important;
+                font-size: 0 !important;
+                line-height: 0 !important;
+                min-width: 0 !important;
+            }
+            .mob-show {
+                display: block !important;
+                font-size: 12px !important;
+                line-height: 30px !important;
+                width: 100% !important;
+                height: auto !important;
+            }
+            .fz10{
+                font-size: 10px !important;
+                line-height: 12px !important;
+            }
+            .fz10_2{
+                font-size: 10px !important;
+                line-height: 16px !important;
+            }
+            .fz10_3{
+                font-size: 10px !important;
+                line-height: 10px !important;
+            }
+            .fz14{
+                font-size: 14px !important;
+                line-height: 16px !important;
+            }
+            .fz15{
+                font-size: 15px !important;
+            }
+            .fz20{
+                font-size: 20px !important;
+                line-height: 22px !important;
+            }
+            .fz24{
+                font-size: 24px !important;
+                line-height: 24px !important;
+            }
+        }
+    </style>
+</head>
+<body style="padding: 0px; margin: 0px; background-color: #ffffff;" class="body">
+<div class="preheader" style="display:none !important;font-size:0px;line-height:0px;max-height:0px;max-width:0px;opacity:0;overflow:hidden">  &nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌</div>
+<!--[if !mso]><!-->
+<div style="font-size:0;color:transparent;opacity:0;height:0;line-height:0;">Preheader&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;</div>
+<!--<![endif]-->
+<table border="0" cellpadding="0" cellspacing="0" style="line-height: normal; font-size: 1px;" width="100%">
+    <tr em="group">
+        <td align="center" bgcolor="#041a27">
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" style="min-width: 346px;">
+                <tr>
+                    <td width="12" style="min-width: 12px">&nbsp;</td>
+                    <td align="center">
+                        <!--[if (gte mso 9)|(IE)]><table width="740" border="0" cellspacing="0" cellpadding="0"><tr><td align="center"><![endif]-->
+                        <table width="740" class="table740" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td align="right">
+                                    <div style="height: 12px; line-height: 12px; font-size: 8px;">&nbsp;</div>
+                                    <!--[if (gte mso 9)|(IE)]><table cellpadding="0" cellspacing="0" border="0" width="690" align="center"><tr><td align="center"><![endif]-->
+                                    <table cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width: 690px;">
+                                        <tr>
+                                            <td>
+                                                <div style="font-family: Tahoma, Arial, sans-serif; color: #A8AFB2; font-size: 32px; line-height: 32px; font-weight: bold;" class="fz20">2М+</div>
+                                                <div style="font-family: Tahoma, Arial, sans-serif; color: #A8AFB2; font-size: 13px; line-height: 15px;" class="fz10"><span class="mob-hide">total</span> active players</div>
+                                            </td>
+                                            <td width="25" style="min-width: 25px">&nbsp;</td>
+                                            <td>
+                                                <div style="font-family: Tahoma, Arial, sans-serif; color: #A8AFB2; font-size: 32px; line-height: 32px; font-weight: bold;" class="fz20">150+</div>
+                                                <div style="font-family: Tahoma, Arial, sans-serif; color: #A8AFB2; font-size: 13px; line-height: 15px;" class="fz10"><span class="mob-hide">total</span> kingdoms</div>
+                                            </td>
+                                            <td width="25" style="min-width: 25px">&nbsp;</td>
+                                            <td>
+                                                <div style="font-family: Tahoma, Arial, sans-serif; color: #A8AFB2; font-size: 32px; line-height: 32px; font-weight: bold;" class="fz20">500+</div>
+                                                <div style="font-family: Tahoma, Arial, sans-serif; color: #A8AFB2; font-size: 13px; line-height: 15px;" class="fz10"><span class="mob-hide">total</span> clans</div>
+                                            </td>
+                                            <td width="25" style="min-width: 25px">&nbsp;</td>
+                                            <td>
+                                                <div style="font-family: Tahoma, Arial, sans-serif; color: #A8AFB2; font-size: 32px; line-height: 32px; font-weight: bold;" class="fz20">???</div>
+                                                <div style="font-family: Tahoma, Arial, sans-serif; color: #A8AFB2; font-size: 13px; line-height: 15px;" class="fz10">gold sold</div>
+                                            </td>
+                                            <td width="25" style="min-width: 25px">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                    <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                    <div style="height: 12px; line-height: 12px; font-size: 8px;">&nbsp;</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" bgcolor="#FFF5E9">
+                                    <table align="center" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                        <tr>
+                                            <td align="center" class="mob-hide">
+                                                <a href="#" target="_blank"><img src="https://imgems.ru/sales/220524/mbn.png" width="740" border="0" alt="" style="display: block; width: 100%; max-width: 740px;"></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" class="mob-show" style="display: none; width: 0; height: 0; padding: 0; font-size: 0; line-height: 0;">
+                                                <a href="#" target="_blank"><img src="https://imgems.ru/sales/220524/mbn_mob.png" width="740" border="0" alt="" style="display: block; width: 100%; max-width: 740px;"></a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" bgcolor="#FFF5E9">
+                                    <!--[if (gte mso 9)|(IE)]><table width="694" border="0" cellspacing="0" cellpadding="0"><tr><td align="center"><![endif]-->
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" style="max-width: 694px;">
+                                        <tr>
+                                            <td width="12" style="min-width: 12px">&nbsp;</td>
+                                            <td align="right" class="text-center">
+                                                <div style="height: 5px; line-height: 5px; font-size: 5px;">&nbsp;</div>
+                                                <div style="font-family: Tahoma, Arial, sans-serif; color: #8E4F14; font-size: 20px; line-height: 24px; font-weight: bold;" class="fz14">Welcome, your Majesty!</div>
+                                                <div style="font-family: Tahoma, Arial, sans-serif; color: #BB2200; font-size: 40px; line-height: 40px; font-weight: bold; text-transform: uppercase;" class="fz24">You’re registered!</div>
+                                            </td>
+                                            <td width="12" style="min-width: 12px">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                    <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                    <div style="height: 20px; line-height: 20px; font-size: 8px">&nbsp;</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" bgcolor="#FFF5E9">
+                                    <!--[if (gte mso 9)|(IE)]><table width="694" border="0" cellspacing="0" cellpadding="0"><tr><td align="center"><![endif]-->
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" style="max-width: 694px;">
+                                        <tr>
+                                            <td width="12" style="min-width: 12px">&nbsp;</td>
+                                            <td align="center">
+                                                <div style="font-family: Arial, sans-serif; color: #8E4F14; font-size: 15px; line-height: 20px;" class="fz10_2">The&nbsp;sound of&nbsp;joy echoes through the streets of&nbsp;your <b>Kingdom</b>. The&nbsp;people have chosen you as&nbsp;their <b>leader</b> <img src="https://imgems.ru/sales/220524/i1.png" width="27" style="display: inline-block; vertical-align: text-top;" alt="" class="w15">. They trust you to&nbsp;lead them through both victory and defeat as&nbsp;your Kingdom grows to&nbsp;become either feared or&nbsp;revered.</div>
+                                            </td>
+                                            <td width="12" style="min-width: 12px">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                    <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                    <div style="height: 30px; line-height: 30px; font-size: 8px;">&nbsp;</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" bgcolor="#FFF5E9">
+                                    <table align="center" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                        <tr>
+                                            <td align="center">
+                                                <img src="https://imgems.ru/sales/220524/bn.png" width="740" border="0" alt="" style="display: block; width: 100%; max-width: 740px;">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" bgcolor="#F3DFBB">
+                                    <table align="center" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                        <tr>
+                                            <td align="center">
+                                                <img src="https://imgems.ru/sales/220524/bn_0.png" width="740" border="0" alt="" style="display: block; width: 100%; max-width: 740px;">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" bgcolor="#F3DFBB">
+                                    <!--[if (gte mso 9)|(IE)]><table width="694" border="0" cellspacing="0" cellpadding="0"><tr><td align="center"><![endif]-->
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" style="max-width: 694px;">
+                                        <tr>
+                                            <td width="12" style="min-width: 12px">&nbsp;</td>
+                                            <td align="center">
+                                                <table border="0" cellpadding="0" cellspacing="0"><tr>
+                                                    <td>
+                                                        <img src="https://imgems.ru/sales/220524/i2.png" width="38" style="display: block;" alt="">
+                                                    </td>
+                                                    <td width="3" style="min-width: 3px">&nbsp;</td>
+                                                    <td>
+                                                        <div style="font-family: Tahoma, Arial, sans-serif; color: #8E4F14; font-size: 20px; line-height: 24px;" class="fz14">Email:&nbsp;&nbsp;<a href="mailto:totalbattle@gmail.com" style="color: #8E4F14; font-weight: bold; text-decoration: none;">totalbattle@gmail.com</a></div>
+                                                    </td>
+                                                </tr></table>
+                                            </td>
+                                            <td width="12" style="min-width: 12px">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                    <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                    <div style="height: 35px; line-height: 35px; font-size: 8px;">&nbsp;</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" bgcolor="#F3DFBB">
+                                    <!--[if (gte mso 9)|(IE)]><table width="694" border="0" cellspacing="0" cellpadding="0"><tr><td align="center"><![endif]-->
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" style="max-width: 694px;">
+                                        <tr>
+                                            <td width="12" style="min-width: 12px">&nbsp;</td>
+                                            <td align="center">
+                                                <!-- Кнопка -->
+                                                <table cellpadding="0" cellspacing="0" border="0" width="312" class="w220">
+                                                    <tr>
+                                                        <td align="center" valign="middle" height="47" width="312" style="height: 47px; background-color: #BB2200; border-radius: 122px;" class="w220">
+                                                            <a href="#" target="_blank" style="display: block; width: 100%; height: 47px; font-size: 18px; line-height: 47px; font-family: Arial, sans-serif; color: #FFF7BF; text-decoration: none; white-space: nowrap;text-transform: uppercase;" class="fz15">head into battle!</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td width="12" style="min-width: 12px">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                    <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                    <div style="height: 20px; line-height: 20px; font-size: 8px;">&nbsp;</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" bgcolor="#F3DFBB">
+                                    <!--[if (gte mso 9)|(IE)]><table width="694" border="0" cellspacing="0" cellpadding="0"><tr><td align="center"><![endif]-->
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" style="max-width: 694px;">
+                                        <tr>
+                                            <td width="12" style="min-width: 12px">&nbsp;</td>
+                                            <td align="center">
+                                                <div style="font-family: Arial, sans-serif; color: #8E4F14; font-size: 15px; line-height: 20px;" class="fz10_2">Work down the list below to&nbsp;get the best out of&nbsp;your <b style="white-space: nowrap;">Total Battle experience</b>!</div>
+                                            </td>
+                                            <td width="12" style="min-width: 12px">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                    <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                    <div style="height: 15px; line-height: 15px; font-size: 8px;">&nbsp;</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" bgcolor="#F3DFBB">
+                                    <table align="center" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                        <tr>
+                                            <td align="center">
+                                                <img src="https://imgems.ru/sales/220524/bn2.png" width="740" border="0" alt="" style="display: block; width: 100%; max-width: 740px;">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" bgcolor="#FFF5E9">
+                                    <table align="center" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                        <tr>
+                                            <td align="center">
+                                                <img src="https://imgems.ru/sales/220524/bn2_0.png" width="740" border="0" alt="" style="display: block; width: 100%; max-width: 740px;">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" bgcolor="#FFF5E9">
+                                    <!--[if (gte mso 9)|(IE)]><table width="694" border="0" cellspacing="0" cellpadding="0"><tr><td align="center"><![endif]-->
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" style="max-width: 694px;">
+                                        <tr>
+                                            <td width="12" style="min-width: 12px">&nbsp;</td>
+                                            <td align="center">
+                                                <div style="height: 25px; line-height: 25px; font-size: 8px;">&nbsp;</div>
+                                                <table border="0" cellpadding="0" cellspacing="0"><tr>
+                                                    <td>
+                                                        <div style="font-family: Tahoma, Arial, sans-serif; color: #8E4F14; font-size: 24px; line-height: 26px;font-weight: bold; text-transform: uppercase;" class="fz14">Stay in touch</div>
+                                                    </td>
+                                                    <td width="10" style="min-width: 10px">&nbsp;</td>
+                                                    <td>
+                                                        <img src="https://imgems.ru/sales/220524/i3.png" width="58" style="display: block;" alt="" class="w29">
+                                                    </td>
+                                                </tr></table>
+                                                <div style="height: 15px; line-height: 15px; font-size: 8px;">&nbsp;</div>
+                                                <div style="font-family: Arial, sans-serif; color: #8E4F14; font-size: 15px; line-height: 20px;" class="fz10_2">We&rsquo;re constantly updating the game with <b>new monsters, epic events, and units</b>. Stay in&nbsp;touch with&nbsp;us by&nbsp;signing up&nbsp;for our newsletter and never miss an&nbsp;update. You might even get some secret coupon codes for <b>extra materials and troops</b>.</div>
+                                                <div style="height: 30px; line-height: 30px; font-size: 8px;">&nbsp;</div>
+                                                <!-- Кнопка -->
+                                                <table cellpadding="0" cellspacing="0" border="0" width="220">
+                                                    <tr>
+                                                        <td align="center" valign="middle" height="47" width="220" style="height: 47px; background-color: #BB2200; border-radius: 122px;" class="w220">
+                                                            <a href="#" target="_blank" style="display: block; width: 100%; height: 47px; font-size: 18px; line-height: 47px; font-family: Arial, sans-serif; color: #FFF7BF; text-decoration: none; white-space: nowrap;text-transform: uppercase;" class="fz15">sign up now</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td width="12" style="min-width: 12px">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                    <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                    <div style="height: 15px; line-height: 15px; font-size: 8px;">&nbsp;</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" bgcolor="#FFF5E9">
+                                    <table align="center" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                        <tr>
+                                            <td align="center">
+                                                <img src="https://imgems.ru/sales/220524/bn3.png" width="740" border="0" alt="" style="display: block; width: 100%; max-width: 740px;">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" bgcolor="#F3DFBB">
+                                    <table align="center" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                        <tr>
+                                            <td align="center">
+                                                <img src="https://imgems.ru/sales/220524/bn3_0.png" width="740" border="0" alt="" style="display: block; width: 100%; max-width: 740px;">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" bgcolor="#F3DFBB">
+                                    <!--[if (gte mso 9)|(IE)]><table width="694" border="0" cellspacing="0" cellpadding="0"><tr><td align="center"><![endif]-->
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" style="max-width: 694px;">
+                                        <tr>
+                                            <td width="12" style="min-width: 12px">&nbsp;</td>
+                                            <td align="center">
+                                                <div style="height: 25px; line-height: 25px; font-size: 8px;">&nbsp;</div>
+                                                <table border="0" cellpadding="0" cellspacing="0"><tr>
+                                                    <td>
+                                                        <div style="font-family: Tahoma, Arial, sans-serif; color: #8E4F14; font-size: 24px; line-height: 26px;font-weight: bold; text-transform: uppercase;" class="fz14">Find a&nbsp;clan</div>
+                                                    </td>
+                                                    <td width="10" style="min-width: 10px">&nbsp;</td>
+                                                    <td>
+                                                        <img src="https://imgems.ru/sales/220524/i4.png" width="46" style="display: block;" alt="" class="w29">
+                                                    </td>
+                                                </tr></table>
+                                                <div style="height: 15px; line-height: 15px; font-size: 8px;">&nbsp;</div>
+                                                <div style="font-family: Arial, sans-serif; color: #8E4F14; font-size: 15px; line-height: 20px;" class="fz10_2">Trying to&nbsp;build your Kingdom and survive alone is&nbsp;a&nbsp;one-way ticket to&nbsp;a&nbsp;pile of&nbsp;rubble. <b>Clans</b> make all the difference here to&nbsp;learn and grow. <b>Follow their rules</b> and you&rsquo;ll quickly find protection and the opportunity to&nbsp;enjoy epic events together. Head in-game to&nbsp;search for a&nbsp;powerful clan.</div>
+                                                <div style="height: 30px; line-height: 30px; font-size: 8px;">&nbsp;</div>
+                                                <img src="https://imgems.ru/sales/220524/clans.png" width="544" border="0" alt="" style="display: block; width: 100%; max-width: 544px;">
+                                                <div style="height: 30px; line-height: 30px; font-size: 8px;">&nbsp;</div>
+                                                <!-- Кнопка -->
+                                                <table cellpadding="0" cellspacing="0" border="0" width="220">
+                                                    <tr>
+                                                        <td align="center" valign="middle" height="47" width="220" style="height: 47px; background-color: #BB2200; border-radius: 122px;" class="w220">
+                                                            <a href="#" target="_blank" style="display: block; width: 100%; height: 47px; font-size: 18px; line-height: 47px; font-family: Arial, sans-serif; color: #FFF7BF; text-decoration: none; white-space: nowrap;text-transform: uppercase;" class="fz15">Join a clan</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td width="12" style="min-width: 12px">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                    <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                    <div style="height: 15px; line-height: 15px; font-size: 8px;">&nbsp;</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" bgcolor="#F3DFBB">
+                                    <table align="center" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                        <tr>
+                                            <td align="center">
+                                                <img src="https://imgems.ru/sales/220524/bn4.png" width="740" border="0" alt="" style="display: block; width: 100%; max-width: 740px;">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" bgcolor="#FFF5E9">
+                                    <table align="center" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                        <tr>
+                                            <td align="center">
+                                                <img src="https://imgems.ru/sales/220524/bn4_0.png" width="740" border="0" alt="" style="display: block; width: 100%; max-width: 740px;">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" bgcolor="#FFF5E9">
+                                    <!--[if (gte mso 9)|(IE)]><table width="694" border="0" cellspacing="0" cellpadding="0"><tr><td align="center"><![endif]-->
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" style="max-width: 694px;">
+                                        <tr>
+                                            <td width="12" style="min-width: 12px">&nbsp;</td>
+                                            <td align="center">
+                                                <div style="height: 25px; line-height: 25px; font-size: 8px;">&nbsp;</div>
+                                                <table border="0" cellpadding="0" cellspacing="0"><tr>
+                                                    <td>
+                                                        <div style="font-family: Tahoma, Arial, sans-serif; color: #8E4F14; font-size: 24px; line-height: 26px;font-weight: bold; text-transform: uppercase;" class="fz14">Get a&nbsp;rolling start</div>
+                                                    </td>
+                                                    <td width="10" style="min-width: 10px">&nbsp;</td>
+                                                    <td>
+                                                        <img src="https://imgems.ru/sales/220524/i5.png" width="60" style="display: block;" alt="" class="w30">
+                                                    </td>
+                                                </tr></table>
+                                                <div style="height: 15px; line-height: 15px; font-size: 8px;">&nbsp;</div>
+                                                <div style="font-family: Arial, sans-serif; color: #8E4F14; font-size: 15px; line-height: 20px;" class="fz10_2">To&nbsp;get you ahead of&nbsp;the pack, we&rsquo;ve made a&nbsp;<b>special deal</b> available for you. It&rsquo;ll get you some of&nbsp;the much needed resources and mercenary troops to&nbsp;support you in&nbsp;building a&nbsp;legendary Kingdom. Visit the <b style="white-space: nowrap;">in-game shop</b> to&nbsp;check it&nbsp;out.</div>
+                                                <div style="height: 30px; line-height: 30px; font-size: 8px;">&nbsp;</div>
+                                                <!-- Кнопка -->
+                                                <table cellpadding="0" cellspacing="0" border="0" width="220">
+                                                    <tr>
+                                                        <td align="center" valign="middle" height="47" width="220" style="height: 47px; background-color: #BB2200; border-radius: 122px;" class="w220">
+                                                            <a href="#" target="_blank" style="display: block; width: 100%; height: 47px; font-size: 18px; line-height: 47px; font-family: Arial, sans-serif; color: #FFF7BF; text-decoration: none; white-space: nowrap;text-transform: uppercase;" class="fz15">Visit the shop</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td width="12" style="min-width: 12px">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                    <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                    <div style="height: 15px; line-height: 15px; font-size: 8px;">&nbsp;</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" bgcolor="#FFF5E9">
+                                    <table align="center" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                        <tr>
+                                            <td align="center">
+                                                <img src="https://imgems.ru/sales/220524/bn5.png" width="740" border="0" alt="" style="display: block; width: 100%; max-width: 740px;">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" bgcolor="#F3DFBB">
+                                    <table align="center" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                        <tr>
+                                            <td align="center">
+                                                <img src="https://imgems.ru/sales/220524/bn5_0.png" width="740" border="0" alt="" style="display: block; width: 100%; max-width: 740px;">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" bgcolor="#F3DFBB">
+                                    <!--[if (gte mso 9)|(IE)]><table width="694" border="0" cellspacing="0" cellpadding="0"><tr><td align="center"><![endif]-->
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" style="max-width: 694px;">
+                                        <tr>
+                                            <td width="12" style="min-width: 12px">&nbsp;</td>
+                                            <td align="center">
+                                                <div style="height: 25px; line-height: 25px; font-size: 8px;">&nbsp;</div>
+                                                <div style="font-family: Tahoma, Arial, sans-serif; color: #BB2200; font-size: 40px; line-height: 40px; font-weight: bold; text-transform: uppercase;" class="fz24">DON’t FORGET</div>
+                                                <div style="font-family: Tahoma, Arial, sans-serif; color: #8E4F14; font-size: 20px; line-height: 24px; font-weight: bold;" class="fz14">to&nbsp;protect your account</div>
+                                                <div style="height: 30px; line-height: 30px; font-size: 8px;">&nbsp;</div>
+                                                <div style="font-family: Arial, sans-serif; color: #8E4F14; font-size: 15px; line-height: 20px;" class="fz10_2">Don&rsquo;t let a&nbsp;single spy into your Kingdom. <b>Bind your account</b> to&nbsp;the game to&nbsp;safeguard your account, protect your progression, and unlock additional rewards. Go&nbsp;to&nbsp;your in-game settings to&nbsp;update this.</div>
+                                                <div style="height: 30px; line-height: 30px; font-size: 8px;">&nbsp;</div>
+                                                <!-- Кнопка -->
+                                                <table cellpadding="0" cellspacing="0" border="0" width="260">
+                                                    <tr>
+                                                        <td align="center" valign="middle" height="47" width="260" style="height: 47px; background-color: #BB2200; border-radius: 122px;" class="w220">
+                                                            <a href="#" target="_blank" style="display: block; width: 100%; height: 47px; font-size: 18px; line-height: 47px; font-family: Arial, sans-serif; color: #FFF7BF; text-decoration: none; white-space: nowrap;text-transform: uppercase;" class="fz15">Bind your account</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+
+                                                <div style="height: 30px; line-height: 30px; font-size: 8px;">&nbsp;</div>
+                                                <table border="0" cellpadding="0" cellspacing="0"><tr>
+                                                    <td>
+                                                        <div style="font-family: Tahoma, Arial, sans-serif; color: #8E4F14; font-size: 24px; line-height: 26px;font-weight: bold; text-transform: uppercase;" class="fz14">Learn the basics</div>
+                                                    </td>
+                                                    <td width="5" style="min-width: 5px">&nbsp;</td>
+                                                    <td>
+                                                        <img src="https://imgems.ru/sales/220524/i6.png" width="44" style="display: block;" alt="" class="w20">
+                                                    </td>
+                                                </tr></table>
+                                            </td>
+                                            <td width="12" style="min-width: 12px">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                    <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" bgcolor="#F3DFBB">
+                                    <table align="center" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                        <tr>
+                                            <td width="12" style="min-width: 12px">&nbsp;</td>
+                                            <td align="center">
+                                                <a href="#" target="_blank"><img src="https://imgems.ru/sales/220524/video.png" width="707" border="0" alt="" style="display: block; width: 100%; max-width: 707px;"></a>
+                                            </td>
+                                            <td width="12" style="min-width: 12px">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                    <div style="height: 50px; line-height: 50px; font-size: 8px;">&nbsp;</div>
+                                </td>
+                            </tr>
+
+                            <!--Footer-->
+                            <tr>
+                                <td align="center" bgcolor="#F3DFBB">
+                                    <!--[if (gte mso 9)|(IE)]><table width="694" border="0" cellspacing="0" cellpadding="0"><tr><td align="center"><![endif]-->
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" style="max-width: 694px;">
+                                        <tr>
+                                            <td width="12" style="min-width: 12px">&nbsp;</td>
+                                            <td align="center">
+                                                <table border="0" cellpadding="0" cellspacing="0"><tr>
+                                                    <td>
+                                                        <div style="font-family: Tahoma, Arial, sans-serif; color: #8E4F14; font-size: 24px; line-height: 26px; font-weight: bold; white-space: nowrap;" class="fz14">Connect with&nbsp;us:</div>
+                                                    </td>
+                                                    <td width="30" style="min-width: 30px" class="w15">&nbsp;</td>
+                                                    <td>
+                                                        <table border="0" cellpadding="0" cellspacing="0"><tr>
+                                                            <td>
+                                                                <a href="#" target="_blank"><img src="https://imgems.ru/sales/220524/s1.png" width="66" style="display: block; width: 100%; max-width: 66px;" alt="" class="w38"></a>
+                                                            </td>
+                                                            <td width="12" style="min-width: 12px">&nbsp;</td>
+                                                            <td>
+                                                                <a href="#" target="_blank"><img src="https://imgems.ru/sales/220524/s2.png" width="66" style="display: block; width: 100%; max-width: 66px;" alt="" class="w38"></a>
+                                                            </td>
+                                                            <td width="12" style="min-width: 12px">&nbsp;</td>
+                                                            <td>
+                                                                <a href="#" target="_blank"><img src="https://imgems.ru/sales/220524/s3.png" width="66" style="display: block; width: 100%; max-width: 66px;" alt="" class="w38"></a>
+                                                            </td>
+                                                        </tr></table>
+                                                    </td>
+                                                </tr></table>
+                                            </td>
+                                            <td width="12" style="min-width: 12px">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                    <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" bgcolor="#F3DFBB">
+                                    <table align="center" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                        <tr>
+                                            <td align="center">
+                                                <img src="https://imgems.ru/sales/220524/bn6.png" width="740" border="0" alt="" style="display: block; width: 100%; max-width: 740px;">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <table align="center" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                        <tr>
+                                            <td align="center">
+                                                <img src="https://imgems.ru/sales/220524/bn6_0.png" width="740" border="0" alt="" style="display: block; width: 100%; max-width: 740px;">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div style="height: 25px; line-height: 25px; font-size: 8px;">&nbsp;</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
+                                    <!--[if (gte mso 9)|(IE)]><table width="694" border="0" cellspacing="0" cellpadding="0"><tr><td align="center"><![endif]-->
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" style="max-width: 694px;">
+                                        <tr>
+                                            <td width="12" style="min-width: 12px">&nbsp;</td>
+                                            <td align="center">
+                                                <div style="font-family: Arial, sans-serif; color: #A8AFB2; font-size: 15px; line-height: 20px;" class="fz10_2">You received this email because you subscribed to&nbsp;our newsletter.</div>
+                                                <div style="font-family: Arial, sans-serif; color: #A8AFB2; font-size: 15px; line-height: 20px;" class="fz10_2">Don&rsquo;t want to&nbsp;receive emails? <a href="#" target="_blank" style="color: #268AD2; text-decoration: underline; font-weight: bold;">Unsubscribe</a> from mailing list</div>
+                                                <div style="height: 35px; line-height: 35px; font-size: 8px;">&nbsp;</div>
+                                                <table border="0" cellpadding="0" cellspacing="0"><tr>
+                                                    <td style="border-bottom: 1px solid #268AD2;">
+                                                        <div style="font-family: Arial, sans-serif; color: #268AD2; font-size: 15px; line-height: 15px; font-weight: bold;" class="fz10_3"><a href="#" target="_blank" style="color: #268AD2; text-decoration: none;">Terms of&nbsp;Use</a>&nbsp;| <a href="#" target="_blank" style="color: #268AD2; text-decoration: none;">Support</a>&nbsp;| <a href="#" target="_blank" style="color: #268AD2; text-decoration: none;">Privacy Statement</a></div>
+                                                    </td>
+                                                </tr></table>
+                                                <div style="height: 50px; line-height: 50px; font-size: 8px;">&nbsp;</div>
+                                                <img src="https://imgems.ru/sales/220524/logo.png" width="194" style="display: block;" alt="">
+                                                <div style="height: 10px; line-height: 10px; font-size: 8px;">&nbsp;</div>
+                                                <div style="font-family: Arial, sans-serif; color: #A8AFB2; font-size: 15px; line-height: 20px;" class="fz10_2">&copy;&nbsp;2022, SCOREWARRIOR LIMITED </div>
+                                                <div style="font-family: Arial, sans-serif; color: #A8AFB2; font-size: 15px; line-height: 20px;" class="fz10_2">16&nbsp;Spyrou Kyprianou Avenue, Divine Clock Tower, 1st floor, 3070&nbsp;Limassol, Cyprus</div>
+                                            </td>
+                                            <td width="12" style="min-width: 12px">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                    <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                                    <div style="height: 35px; line-height: 35px; font-size: 8px;">&nbsp;</div>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+                    </td>
+                    <td width="12" style="min-width: 12px">&nbsp;</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
